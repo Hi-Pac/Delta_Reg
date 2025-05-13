@@ -160,10 +160,10 @@
                         <span>آخر تسجيل:</span>
                         <span id="last-record">-</span>
                     </div>
-                    <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400 mt-2">
+<!--                     <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400 mt-2">
                         <span>الموقع:</span>
                         <span id="location-info">-</span>
-                    </div>
+                    </div> -->
                     <div class="flex items-center justify-between text-sm text-gray-600 dark:text-gray-400 mt-2">
                         <span>حالة الإشعارات:</span>
                         <span id="telegram-status">-</span>
@@ -710,9 +710,9 @@ ${workHours !== null ? `<b>ساعات العمل:</b> ${workHours} ساعة` : '
             const dateTimeEl = document.getElementById('current-date-time');
             if (dateTimeEl) {
                 dateTimeEl.innerHTML = `
-                    <div>${hijriDate}</div>
-                    <div class="text-gray-500 dark:text-gray-400 text-xs mt-1">${gregorianDate} | ${timeStr}</div>
-                `;
+                <div>${hijriDate}</div>
+                <div class="text-gray-600 dark:text-gray-300 mt-1">${gregorianDate} | ${timeStr}</div>
+            `;
             }
         };
         
